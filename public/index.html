@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Budget-er</title>
+  <link href="https://fonts.googleapis.com/css?family=Karla:400,700|Rubik:400,400i,700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  
+  <link rel="stylesheet" href="./assets/css/style.css" />
+</head>
+
+<body>
+  <header class="py-3 mb-3">
+    <div class="flex-row justify-space-between align-center container-fluid mx-auto">
+      <h1 class="text-dark bc-dark p-3 header-opacity">Budget-er</h1>
+    
+    </div>
+    <div class="container-fluid mx-auto">
+      <section class="p-3 my-4  header-opacity">
+        <h2 class="text-dark">Manage your expenses better</h2>
+        <p class="text-dark">Financial stability which starts with everyday budgeting. 
+    </div>
+  </header>
+
+  <main class="container-fluid mx-auto">
+
+
+    <section class="my-4 flex-row justify-space-between ">
+      <div class="col-12 col-lg-6 bc-dark p-3 mb-3">
+        <h3 class="text-dark">Choose an Expense</h3>
+        <form id="expense-form">
+          
+        <label for="expense-input" class="form-label">Expense</label>
+          <div class="flex-row justify-center">
+            <div class="col-auto mb-2">
+              <input type="radio" id="rent-input" name="expense" value="rent" checked>
+              <label for="rent-input">Rent</label>
+            </div>
+            <div class="col-auto mb-2">
+              <input type="radio" id="credit-input" name="expense" value="credit">
+              <label for="credit-input">Credit Card</label>
+            </div>
+            <div class="col-auto mb-2">
+              <input type="radio" id="medical-input" name="expense" value="medical">
+              <label for="medical-input">Medical</label>
+            </div>
+            <div class="col-auto mb-2">
+              <input type="radio" id="vacation-input" name="expense" value="vacation">
+              <label for="vacation-input">Vacation</label>
+            </div>
+            <div class="col-auto mb-2">
+              <input type="radio" id="recreational-input" name="expense" value="recreational">
+              <label for="recreational-input">Recreational</label>
+            </div>
+            <input type="text" id="expenses-input" name="expenses" class="form-input" placeholder="Enter Amount">
+            <button class="btn">Add</button>
+          </div>
+
+          <label for="paid-input" class="form-label">Paid Expenses</label>
+          <select multiple id="paid-input" class="form-input" name="paid">
+            <option value="Rent">Rent</option>
+            <option value="Credit Card">Credit Card</option>
+            <option value="Medical">Medical</option>
+            <option value="Vacation">Vacation</option>
+            <option value="Recreational">Recreational</option>
+          </select>
+
+          <button class="btn">Add</button>
+        </form>
+      </div>
+
+      <div class="col-12 col-lg-6 bc-dark p-3 mb-3">
+        <div class="col-12 col-lg-6 bc-dark p-3 mb-3">
+            <h3 class="text-dark">Expenses</h3>
+            <div class="col-12 col-lg-9 bc-dark p-3">
+                <div class="flex-row justify-space-between bc-warning" id="display-area"></div>
+            </div>
+        </div> 
+        <div class="col-12 col-lg-6 bc-dark p-3 mb-3">
+            <h3 class="text-dark">Paid Expenses</h3>
+            <div class="col-12 col-lg-9 bc-dark p-3">
+                <div class="flex-row justify-space-between bc-warning" id="display-area"></div>
+            </div>    
+        </div>
+        <div class="col-12 col-lg-6 bc-dark p-3 mb-3">
+            <h4 class="text-dark">Outstanding Expenses</h4>
+            <div class="col-12 col-lg-9 bc-dark p-3">
+                <div class="flex-row justify-space-between bc-warning" id="display-area"></div>
+            </div>    
+        </div>
+    
+      </div>
+
+    </section>
+
+
+  </main>
+
+  <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
